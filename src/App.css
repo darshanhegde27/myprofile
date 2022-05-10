@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+#circle {
+  background-color:rgb(80, 92, 85);
+  background-image:url("./profile.png");
+  background-position: center;
+  border:1px solid black;    
+  height:400px;
+  width: 400px;
+  border-radius:50%;
+  position:relative;
+  top:50%;
+  margin: auto;
+  
+
+
+  
+}
+#circle:hover {
+  background-color:rgb(80, 92, 85);
+  background-image:url('./profile.png');
+  background-position: center;
+  border:1px solid black;    
+  height: 450px;
+  width: 450px;
+  border-radius:50%;
+  position:relative;
+  top:50%;
+  margin: auto;
+  transition-property: width,height;
+  transition-duration: 5s;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ct
+{ 
+  /* Center vertically and horizontally */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height:auto;
+  position: relative;
+  top:100px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  left: -100px;
+  
+ 
+}
+body
+{
+  background: #040405;
+  color: wheat;
+  font-size: 40px;
+}
+#sp::before {
+  content: 'Hi ';
+  margin-top: 25px;
+  font-size: 40px;
+  text-align: center;
+  animation: fadein 4s;
+  position: relative;
+  top: 20%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadein {
   from {
-    transform: rotate(0deg);
+      opacity:0;
   }
   to {
-    transform: rotate(360deg);
+      opacity:1;
   }
+}
+
+#semi
+{
+  height: 500px;
+  width: 100px;
+  border-radius: 500px 500px 500px 500px;
+  background-color: black;
+  position: relative;
+  left:300px;
+  
+  
 }
